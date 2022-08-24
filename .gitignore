@@ -1,0 +1,50 @@
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# 순서중요 IntelliJ IDEA 에서 생성하는 out directory 제외
+**/out
+# 순서중요 src/main 하위 directory 는 상위에 작성한 ignore rule 에서 제외 (패키지명이 out 이여도 ignore 로 분류되지 않아야 한다)
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+lombok.config
+
+**/src/main/generated/
+**/src/main/resources/static/docs/
+
+### ctags ###
+tags
+
+### custom backup ###
+.backup
+
+### hidden data ###
+application-private.yml
